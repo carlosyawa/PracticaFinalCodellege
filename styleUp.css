@@ -1,0 +1,700 @@
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    section {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #home {
+        background-image: url(./imagenes/GroupPhoto.jpeg);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* .navbar {
+        display: flex;
+        width: 85%;
+        height: 10vh;
+        align-items: center;
+        position: absolute;
+        top: 5%;
+    }
+    
+    .navbar ul {
+        display: flex;
+        width: 100%;
+        padding: 2%;
+    }
+    
+    .navbar ul>a {
+        text-decoration: none;
+        margin-left: 2%;
+    }
+    
+    .navbar ul il {
+        list-style: none;
+        position: relative;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .navbar img {
+        width: 200px;
+        height: 50px;
+        filter: none;
+    }
+    
+    .navbar .iconos {
+        width: 20%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-size: 20px;
+        z-index: 2;
+    }
+    
+    .navbar .boton {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(34, 255, 0);
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        color: white;
+    }
+     */
+    /* Inicio estilo NavBar */
+    
+    .navBar {
+        width: 100%;
+        height: 13vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(59, 224, 59);
+        margin: 0%;
+        padding: 0%;
+        position: relative;
+    }
+    
+    .navBar div li {
+        list-style-type: none;
+    }
+    
+    .navBar div li a {
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+    
+    .logo {
+        width: 200px;
+        height: 100px;
+        display: block;
+        position: absolute;
+        left: 8%;
+    }
+    
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 27%;
+    }
+    
+    .barra li {
+        display: block;
+        margin: 13px;
+    }
+    
+    #logo_Code {
+        width: 200px;
+        height: 90px;
+    }
+    
+    .btn_Aplica {
+        background: blue;
+        width: 8%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-right: 10%;
+    }
+    /*Fin Estilo de navbar */
+    
+    .iconos ul {
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        cursor: pointer;
+    }
+    
+    .iconos ul li {
+        list-style: none;
+    }
+    
+    .iconos ul li:hover ul {
+        display: block;
+    }
+    
+    .iconos ul li ul {
+        position: absolute;
+        width: 100px;
+        display: none;
+    }
+    
+    .iconos ul li ul li {
+        background: white;
+        color: black;
+        font-size: 20px;
+        display: block;
+    }
+    
+    .iconos ul li ul li:hover {
+        background: grey;
+    }
+    
+    #home .programa {
+        width: auto;
+        font-size: 5em;
+        position: absolute;
+        top: 43%;
+        left: 4%;
+        color: rgb(32, 81, 245);
+    }
+    
+    #home .UP {
+        position: absolute;
+        bottom: -80%;
+        font-size: 5em;
+        top: 52%;
+        left: 4%;
+        color: rgb(32, 81, 245);
+        height: auto;
+    }
+    
+    #informacion {
+        width: 100%;
+        height: 130vh;
+        position: relative;
+    }
+    
+    #informacion .tituloinf {
+        color: rgb(32, 81, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+        font-size: 25px;
+    }
+    
+    #informacion .inf {
+        width: 100%;
+        height: 20vh;
+        font-size: 18px;
+        padding-left: 5%;
+        box-sizing: border-box;
+    }
+    
+    .caja1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        box-sizing: border-box;
+        padding-left: 5%;
+    }
+    
+    .caja1 .cajaIzq {
+        width: 50%;
+        height: 100vh;
+        font-size: 18px;
+    }
+    
+    .caja1 .cajaIzq h2 {
+        color: rgb(32, 81, 245);
+        /* font-size: 18px; */
+    }
+    
+    .caja1 .cajaDer {
+        width: 50%;
+        height: 100vh;
+        position: relative;
+        color: rgb(32, 81, 245);
+    }
+    
+    .cajaDer .mes {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        position: relative;
+        top: 13%;
+        left: 7%;
+        color: white;
+        background: rgb(32, 81, 245);
+    }
+    
+    .cajaDer .mes .fa {
+        position: absolute;
+        top: 6%;
+        left: 42%;
+        font-size: 25px;
+    }
+    
+    .cajaDer .mes .num {
+        position: absolute;
+        top: 15%;
+        left: 18%;
+        font-size: 80px;
+    }
+    
+    .cajaDer .mes .semanas {
+        position: absolute;
+        top: 68%;
+        left: 25%;
+        font-size: 15px;
+    }
+    
+    .cajaDer .mes .duracion {
+        position: absolute;
+        top: 79%;
+        left: 18%;
+        font-size: 15px;
+    }
+    
+    .cajaDer .horas {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        position: absolute;
+        position: relative;
+        top: 40%;
+        left: 33%;
+        color: white;
+        background: rgb(32, 81, 245);
+    }
+    
+    .cajaDer .horas .fa {
+        position: absolute;
+        top: 6%;
+        left: 42%;
+        font-size: 30px;
+    }
+    
+    .cajaDer .horas .tiempo {
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        font-size: 80px;
+    }
+    
+    .cajaDer .horas .hrs {
+        position: absolute;
+        top: 68%;
+        left: 28%;
+        font-size: 15px;
+    }
+    
+    .cajaDer .horas .dia {
+        position: absolute;
+        top: 79%;
+        left: 42%;
+        font-size: 15px;
+    }
+    
+    .cajaDer .ciudades {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        color: white;
+        top: 6%;
+        left: 59%;
+        background: rgb(32, 81, 245);
+    }
+    
+    .cajaDer .ciudades .fa {
+        position: absolute;
+        top: 11%;
+        left: 38%;
+        font-size: 30px;
+    }
+    
+    .cajaDer .ciudades ul {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+    }
+    
+    .cajaDer .ciudades ul li {
+        list-style: none;
+    }
+    
+    #temas {
+        width: 100%;
+        height: 120vh;
+        box-sizing: border-box;
+        padding: 5%;
+        padding-top: 2%;
+    }
+    
+    #temas h2 {
+        color: rgb(32, 81, 245);
+    }
+    
+    #temas .slider {
+        width: 100%;
+        height: 30vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .slider .row1 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .slider .row1>div {
+        width: 33%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .slider .row2 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .slider .row2>div {
+        width: 33%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .slider img {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 250%;
+        animation: cambio 10s infinite;
+    }
+    
+    @keyframes cambio {
+        0% {
+            margin-left: 0;
+        }
+        25% {
+            margin-left: 0;
+        }
+        50% {
+            margin-left: -125%;
+        }
+        75% {
+            margin-left: -125%;
+        }
+        100% {
+            margin-left: 0%;
+        }
+    }
+    
+    .proceso {
+        width: 100%;
+        height: 70vh;
+    }
+    
+    .proceso h2 {
+        width: 100%;
+        height: 10vh;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .proceso p {
+        width: 100%;
+        height: 5vh;
+        font-size: 20px;
+    }
+    
+    .lista {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 0 5%;
+    }
+    
+    .proceso .lista1 {
+        width: 50%;
+        height: auto;
+    }
+    
+    .proceso .lista2 {
+        width: 50%;
+        height: auto;
+    }
+    
+    #datos {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        padding: 2%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #datos .nombre {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nombre #txtNombre {
+        width: 50%;
+        height: 5vh;
+        font-size: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    #datos .email {
+        width: 50%;
+        height: 10vh;
+        position: absolute;
+        margin: 0 25%;
+        top: 25%;
+        left: 1%;
+        box-sizing: border-box;
+    }
+    
+    .email #txtEmail {
+        width: 46%;
+        height: 5vh;
+        font-size: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    #datos .pass {
+        width: 50%;
+        height: 10vh;
+        position: absolute;
+        margin: 0 25%;
+        top: 25%;
+        box-sizing: border-box;
+    }
+    
+    .pass #txtPass {
+        width: 48%;
+        height: 5vh;
+        font-size: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    #datos .clase {
+        width: 50%;
+        height: 10vh;
+        position: absolute;
+        margin: 0 25%;
+        top: 40%;
+        left: 1%;
+        box-sizing: border-box;
+    }
+    
+    .clase #selClase {
+        width: 15%;
+        height: 5vh;
+        font-size: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    #datos .localidad {
+        width: 50%;
+        height: 10vh;
+        position: absolute;
+        margin: 0 15%;
+        top: 40%;
+        box-sizing: border-box;
+    }
+    
+    .localidad #selLocal {
+        width: 30%;
+        height: 5vh;
+        font-size: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .localidad span a {
+        text-decoration: none;
+    }
+    
+    #datos .robot {
+        width: 20%;
+        height: 10vh;
+        position: absolute;
+        top: 55%;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(173, 173, 173);
+    }
+    
+    .robot .fa {
+        margin-left: 30%;
+        font-size: 25px;
+    }
+    
+    #lugares {
+        width: 100%;
+        height: 200vh;
+        box-sizing: border-box;
+        padding: 5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #lugares h2 {
+        width: 100%;
+        text-align: center;
+        color: rgb(32, 81, 245);
+    }
+    
+    #lugares .monterrey {
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .monterrey p {
+        text-align: center;
+    }
+    
+    #lugares .aguascalientes {
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .aguascalientes p {
+        text-align: center;
+    }
+    
+    #lugares .guadalajara {
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .guadalajara p {
+        text-align: center;
+    }
+    
+    footer {
+        width: 100%;
+        height: 100vh;
+        background: url(./imagenes/imgFooter.jpeg);
+        background-size: 100% 100%;
+        position: relative;
+    }
+    
+    footer .fa {
+        bottom: 3%;
+        right: 3%;
+        color: white;
+        font-size: 50px;
+        position: absolute;
+    }
+    
+    footer img {
+        bottom: 3%;
+        left: 3%;
+        position: absolute;
+        width: 200px;
+        height: 100px;
+    }
+    
+    footer .footerCont {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .footerCont b {
+        position: absolute;
+        top: 42%;
+        left: 43%;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .footerCont span {
+        position: absolute;
+        top: 48%;
+        left: 45%;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .footerCont .footerBtn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 15vh;
+        top: 57%;
+        left: 35%;
+        font-size: 35px;
+        border-top-left-radius: 60%;
+        border-bottom-right-radius: 60%;
+        color: rgb(32, 81, 245);
+        background: white;
+        text-align: center;
+    }
